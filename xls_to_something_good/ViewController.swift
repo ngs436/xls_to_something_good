@@ -31,7 +31,7 @@ class ViewController: NSViewController {
         panel.canChooseFiles = true
         panel.canChooseDirectories = false
         panel.allowsMultipleSelection = false
-        panel.allowedFileTypes = ["xls","xlsx","xlsm"]
+        panel.allowedFileTypes = ["xls"]
         panel.begin (completionHandler:{ (num) -> Void in
             if num == NSApplication.ModalResponse.OK {
                 // ファイルを選択したか(OKを押したか)
